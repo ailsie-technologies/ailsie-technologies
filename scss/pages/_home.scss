@@ -1,0 +1,125 @@
+section.services {
+  padding-bottom: 120px;
+  padding-top: 120px;
+
+  .icon {
+    background-color: transparent;
+    padding: 0.8rem;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-top: 30px;
+
+    &.ui-ux {
+      svg path {
+        stroke: #ef3737;
+      }
+
+      background-color: rgba(#ef3737, 0.1);
+    }
+
+    &.website-dev {
+      svg {
+        stroke: #6f5bd8;
+      }
+
+      background-color: rgba(#6f5bd8, 0.1);
+    }
+
+    &.web-apps-dev {
+      svg {
+        stroke: #19be6f;
+      }
+
+      background-color: rgba(#19be6f, 0.1);
+    }
+
+    &.mobile-apps-dev {
+      svg {
+        stroke: #0094ff;
+      }
+
+      background-color: rgba(#0094ff, 0.1);
+    }
+
+    &.hosting {
+      svg {
+        stroke: #fd723b;
+      }
+
+      background-color: rgba(#fd723b, 0.1);
+    }
+
+    &.seo {
+      svg {
+        stroke: #3b50df;
+      }
+
+      background-color: rgba(#3b50df, 0.1);
+    }
+  }
+}
+
+section.hosting {
+  padding-bottom: 120px;
+
+  .card {
+    margin-top: 30px;
+
+    .card-header {
+      text-align: center;
+    }
+
+    .card-body:nth-child(odd) {
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .list-unstyled {
+      li::before {
+        content: '\2713';
+        margin-right: 10px;
+        color: #19be6f;
+      }
+      li.unavailable::before {
+        content: '\2717';
+        color: #ef3737;
+      }
+    }
+  }
+}
+
+section.contact {
+  padding-bottom: 120px;
+}
+
+header {
+  padding: 120px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to top,white, transparent), url('../img/hero-bg.jpg');
+
+  h1,
+  p {
+    margin-bottom: 32px;
+  }
+
+  h1 {
+    font-weight: 700;
+  }
+}
+
+footer {
+  background-color: #222222;
+  text-align: center;
+  padding: 1rem 0;
+
+  span {
+    color: white;
+  }
+}
+
+.title {
+  font-weight: 700;
+}
